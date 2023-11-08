@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+	justify-items: stretch;
+	margin: 20px 220px;
+}
+
+.set {
+    margin-top: 20px;
+}
+
+.game {
+    margin-top: 20px;
+	
+}
+
+.servicio {
+    margin-top: 20px;
+	
+}
+
+.jugador {
+    
+    margin: 0 20px;
+}
+
+.puntaje {
+    margin-top: 20px;
+}
+
+.puntaje h3 {
+    margin: 0;
+}
+
+.puntaje-actual {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+* Style for dropdown button */
+.dropbtn {
+  background-color: #5d5fd6;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+/* Style for dropdown content */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 85px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
+  
+}
+
+/* Style for each content div */
+.dropdown-content div {
+  padding: 10px 5px;
+  
+}
+
+/* Highlight dropdown options on hover */
+.dropdown-content div:hover {
+  background-color: #eaeaea;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+/* Highlight dropdown button when dropdown menu is open */
+.dropdown:hover .dropbtn {
+  background-color: #474885;
+}

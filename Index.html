@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estad&iacute;sticas de juego de tenis</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Estad&iacute;sticas de juego de tenis</h1>
+    </header>
+
+    <main>
+      <div class="set">
+		<h2>Set</h2>
+           <form method="post" action="./php/almacenar.php">
+            <select name=sets>
+              <option value="Set 1">Set 1</option>
+			  <option value="Set 2">Set 2</option>
+            </select>    
+		  
+		  
+		     <div class="game">
+            <h2>Game</h2>
+        <!  <form method="post" action="/send/">
+            <select name=game>
+              <option value="Game 1">Game 1</option>
+			  <option value="Game 2">Game 2</option>
+			  <option value="Game 3">Game 3</option>
+			  <option value="Game 4">Game 4</option>
+			  <option value="Game 5">Game 5</option>
+			  <option value="Game 6">Game 6</option>
+			  <option value="Game 7">Game 7</option>
+            </select>
+        <!   </form>
+        </div>   
+		  
+        </div>
+		
+		 <div class="servicio">
+            <h2>Servicio</h2>
+        <! <form method="post" action="/send/">
+            <select name=Servicio>
+              <option value="Primero">Primero</option>
+			  <option value="Segundo">Segundo</option>
+			  <option value="Doble Falta">Doble Falta</option>
+			  <option value="No Aplica">No Aplica</option>
+            </select>
+        <!  </form>
+		  
+        </div>
+    		
+        <div class="jugador">
+            <h3>Jugador 1</h3>
+            <div class="puntaje">
+                <h3>Puntaje:</h3>
+                <div class="puntaje-actual">
+                    <input type="text" id="puntaje-jugador1" name="p1" style="width : 75px; heigth : 200px; size : 30; font-size: 45pt; text-align: center" />
+                </div>
+            </div>
+            <button id="s1">Sumar Punto </button>
+        </div>
+
+        <div class="jugador">
+            <h3>Jugador 2</h3>
+            <div class="puntaje">
+                <h3>Puntaje:</h3>
+                <div class="puntaje-actual">
+					<input type="text" id="puntaje-jugador2" name="p2"  style="width : 75px; heigth : 200px; size : 30; font-size: 45pt; text-align: center" />
+                </div>
+            </div>
+			 <button id="s2">Sumar Punto </button>
+        </div>
+		</form>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
